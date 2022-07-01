@@ -19,13 +19,13 @@ export default function Weather () {
           <div className="col-6">
             <div className="weather-detail">
               <div className="weather-detail-description">
-                <span>☁</span> <span>Cloudy</span>
+                ☁ Cloudy
               </div>
               <div className="weather-detail-pressure">
-                Pressure: <span>1004</span>hPa
+                Pressure: 1004hPa
               </div>
               <div className="weather-detail-wind">
-                Wind: <span>8</span>km/h
+                Wind: 8km/h
               </div>
             </div>
           </div>

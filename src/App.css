@@ -1,6 +1,9 @@
 .App {
+    max-width: 600px;
+    margin: 20px;
     padding: 20px;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 5px 5px 8px 0px;
+    background-color: rgb(59, 135, 233);
   }
