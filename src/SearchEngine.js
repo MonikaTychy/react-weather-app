@@ -2,8 +2,10 @@ import React from 'react';
 import './SearchEngine.css';
 
 export default function SearchEngine () {
+ 
     return (      
-<form className='SearchEngine'>
+      <div className='SearchEngine'>
+<form>
  <div className='row'>
   <div className='col-8'>
    <input type='search' placeholder='Enter a city...' className='form-control' autoFocus />
@@ -13,5 +15,6 @@ export default function SearchEngine () {
   </div>
  </div>
 </form>
+</div>
     );
 }
