@@ -1,3 +1,9 @@
 footer {
     margin-left: 20px;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.Footer a {
+    text-decoration: none;
 }

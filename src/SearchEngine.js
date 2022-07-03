@@ -6,10 +6,10 @@ export default function SearchEngine () {
 <form className='SearchEngine'>
  <div className='row'>
   <div className='col-8'>
-   <input type='search' placeholder='Enter a city...' />
+   <input type='search' placeholder='Enter a city...' className='form-control' autoFocus />
   </div>
   <div className='col-4'>
-   <button type='submit' className='btn btn-dark'>Search</button>
+   <button type='submit' className='btn btn-dark w-100'>Search</button>
   </div>
  </div>
 </form>

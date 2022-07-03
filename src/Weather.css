@@ -1,6 +1,43 @@
 .Weather {
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #000;
     padding: 10px;
+}
+
+.Weather h1, h2 {
+    font-weight: bold;
+}
+
+.Weather h1, h2, h3 {
+    line-height: 1;
+}
+
+.Weather h1 {
+    font-size: 32px;
+}
+
+.Weather h2 {
+    font-size: 48px;
+}
+
+.Weather h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.Weather li {
+    font-size: 16px;
+    line-height: 1,5;
+    list-style: none;
+}
+
+.Weather .units {
+    font-size: 16px;
+    position: relative;
+    top: -22px;
+}
+
+.Weather a {
+    text-decoration: none;
 }
