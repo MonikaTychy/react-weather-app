@@ -31,13 +31,3 @@
     line-height: 1,5;
     list-style: none;
 }
-
-.Weather .units {
-    font-size: 16px;
-    position: relative;
-    top: -22px;
-}
-
-.Weather a {
-    text-decoration: none;
-}

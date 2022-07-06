@@ -1,17 +1,13 @@
 import React from 'react';
 import './Weather.css';
 import FormattedTime from './FormattedTime'
+import TempConversion from './TempConversion';
 
 export default function Weather (props) {
     return (
     <div className='Weather'>
       <h1>{props.infos.cityName}</h1>
-        <h2>
-          {Math.round(props.infos.temperature)}
-          <span className="units">
-            <a href="/"> °C </a>|<a href="/"> °F</a>
-          </span>
-        </h2>
+          <TempConversion celsius={Math.round(props.infos.temperature)}/>
         <h3><span className='icon'>{props.infos.icon}</span> {props.infos.description}</h3>
       <div className="row my-3">
           <div className="col-6">
