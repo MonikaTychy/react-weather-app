@@ -1,5 +1,6 @@
 import React from 'react';
 import './Weather.css';
+import FormattedTime from './FormattedTime'
 
 export default function Weather (props) {
     return (
@@ -14,10 +15,7 @@ export default function Weather (props) {
         <h3><span className='icon'>{props.infos.icon}</span> {props.infos.description}</h3>
       <div className="row my-3">
           <div className="col-6">
-            <ul>
-             <li>16:48 </li>
-             <li>03 april 2022</li>
-            </ul>
+            <FormattedTime timestamp={props.infos.timestamp} />
           </div>
           <div className="col-6">
             <ul>
