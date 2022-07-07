@@ -29,8 +29,8 @@ export default function FormattedTime (props) {
 
     return (
         <ul>
-             <li>{hours}:{minutes}</li>
              <li>{day} {month} {year}</li>
-            </ul>
+             <li>{hours}:{minutes}</li>
+        </ul>
     );
 }
