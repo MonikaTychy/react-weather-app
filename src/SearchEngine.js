@@ -16,7 +16,9 @@ export default function SearchEngine (props) {
         icon: response.data.weather[0].icon,
         timestamp: response.data.dt,
         pressure: response.data.main.pressure,
-        wind: response.data.wind.speed
+        wind: response.data.wind.speed,
+        longitude: response.data.coord.lon,
+        latitude: response.data.coord.lat
       });
     }
 
