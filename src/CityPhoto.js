@@ -32,6 +32,6 @@ export default function CityPhoto(props) {
         <div className="CityPhoto">
           <img src="https://img.freepik.com/free-vector/urban-street-landscape-with-cafe-beauty-salon_107791-1892.jpg" alt="cartoon city" className="rounded float-end img-fluid" />
         </div>
-      );;
+      );
   }
 }
