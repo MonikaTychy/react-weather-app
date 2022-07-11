@@ -3,6 +3,7 @@ import './Weather.css';
 import FormattedTime from './FormattedTime'
 import WeatherIcon from './WeatherIcon';
 import DailyForecast from './DailyForecast';
+import CityPhoto from './CityPhoto';
 
 export default function Weather (props) {
     return (
@@ -15,6 +16,7 @@ export default function Weather (props) {
          <WeatherIcon iconCode={props.infos.icon} size={48} />
        </div>
         <div className='description'>{props.infos.description}</div>
+        <CityPhoto city={props.infos.cityName} />
           <div className="row my-3">
            <div className="col-6">
             <FormattedTime timestamp={props.infos.timestamp} />
