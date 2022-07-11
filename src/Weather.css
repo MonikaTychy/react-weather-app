@@ -17,6 +17,16 @@
     font-size: 32px;
 }
 
+.Weather h2 {
+    font-size: 46px;
+}
+
+.Weather .degrees {
+    font-size: 16px;
+    position: relative;
+    top: -20px;
+}
+
 .Weather .description {
     font-size: 22px;
     font-weight: normal;
