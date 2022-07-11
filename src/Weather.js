@@ -8,6 +8,9 @@ import CityPhoto from './CityPhoto';
 export default function Weather (props) {
     return (
     <div className='Weather'>
+      <div className='main'>
+        <div className='row'>
+          <div className='col-4'>
       <h1>{props.infos.cityName}</h1>
        <div className='d-inline-flex'>
          <h2>{Math.round(props.infos.temperature)}
@@ -16,7 +19,12 @@ export default function Weather (props) {
          <WeatherIcon iconCode={props.infos.icon} size={48} />
        </div>
         <div className='description'>{props.infos.description}</div>
+       </div>
+       <div className='col-8'>
         <CityPhoto city={props.infos.cityName} />
+        </div>
+        </div>
+        </div>
           <div className="row my-3">
            <div className="col-6">
             <FormattedTime timestamp={props.infos.timestamp} />
