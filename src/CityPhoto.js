@@ -7,9 +7,9 @@ export default function CityPhoto(props) {
 
   function showResponse(response) {
     setImage({
-      url: response.data.urls.thumb,
-      id: response.data.id,
-      description: response.data.description
+      url: response.data.results[0].urls.thumb,
+      id: response.data.results[0].id,
+      description: response.data.results[0].description
     });
     setReady(true);
   }
@@ -25,13 +25,10 @@ export default function CityPhoto(props) {
       </div>
     );
   } else {
-    let apiUrlUnsplash = `https://api.unsplash.com/photos/random?client_id=xCxd2Wl6IORTInF2bnqI4Y0xexyKziO4BejWkM2TLIw&query=town ${props.city}`;
+    const apiKey = `xCxd2Wl6IORTInF2bnqI4Y0xexyKziO4BejWkM2TLIw`;
+    let apiUrlUnsplash = `https://api.unsplash.com/search/photos?page=1&query=${props.city}&client_id=${apiKey}`;
     axios.get(apiUrlUnsplash).then(showResponse);
 
-    return (
-        <div className="CityPhoto">
-          <img src="https://img.freepik.com/free-vector/urban-street-landscape-with-cafe-beauty-salon_107791-1892.jpg" alt="cartoon city" className="rounded float-end img-fluid" />
-        </div>
-      );
+    return null;
   }
 }
