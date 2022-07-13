@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './CityPhoto.css';
 
 export default function CityPhoto(props) {
   const [ready, setReady] = useState(false);
@@ -21,7 +22,7 @@ export default function CityPhoto(props) {
   if (ready) {
     return (
       <div className="CityPhoto">
-        <img src={image.url} key={image.id} alt={image.description} className="rounded float-end" />
+        <img src={image.url} key={image.id} alt={image.description} className="float-end" />
       </div>
     );
   } else {

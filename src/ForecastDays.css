@@ -1,0 +1,28 @@
+.ForecastDays {
+    font-weight: bold;
+}
+
+.ForecastDays canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.ForecastDays .dayName {
+    margin-bottom: 15px;
+    color: #7d0d85;
+    opacity: 0.6;
+}
+
+.ForecastDays .degrees {
+    margin-top: 30px;
+    color: #7d0d85;
+}
+
+.ForecastDays .degrees .min {
+    opacity: 0.6;
+    padding: 0 5px;
+}
+
+.ForecastDays .degrees .max {
+    padding: 0 5px;
+}

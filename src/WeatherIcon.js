@@ -24,10 +24,10 @@ export default function WeatherIcon(props) {
       };
 
     return (
-<div className='WeatherIcon me-3'>
+<div className='WeatherIcon'>
 <ReactSkycon
         icon={codeConnection[props.iconCode]}
-        color={"purple"}
+        color={props.color}
         size={props.size}
         animate={true}
       />
