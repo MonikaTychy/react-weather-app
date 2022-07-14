@@ -5,21 +5,20 @@
     padding: 10px;
 }
 
-.Weather h1, h2, h3 {
+.Weather h1, h2 {
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.5;
     text-align: center;
     color: #132743;
-    margin: 0 20px;
+    margin: 0;
 }
 
 .Weather h1 {
     font-size: 42px;
-    margin: 0;
 }
 
 
-.Weather h3 {
+.Weather h2 {
     font-size: 22px;
     font-style: italic;
     text-transform: capitalize;
@@ -31,10 +30,8 @@
     margin: 0;
     font-size: 18px;
     font-style: italic;
-    line-height: 1,5;
+    line-height: 1.5;
     list-style: none;
-    padding: 0;
-    margin: 0;
     color: #407088;
 }
 
@@ -49,6 +46,10 @@
     border-color: rgb(233, 214, 247);
 }
 
+.Weather .city-row {
+    margin-bottom: 20px;
+}
+
 .Weather .temperature {
     font-size: 38px;
     margin-left: 20px;
@@ -57,4 +58,47 @@
     font-size: 16px;
     position: relative;
     top: -15px;
+}
+
+.Weather .weather-details {
+    align-items: center;
+    margin: auto;
+}
+
+.WeatherIcon {
+    align-items: center;
+    margin: auto;
+}
+
+.CityPhoto img {
+    border-radius: 70px 20px;
+    border: 2px solid rgb(246, 244, 248);
+    max-height: 230px;
+    max-width: 100%;
+}
+
+p.FormattedTime {
+    margin-top: 20px;
+}
+
+@media(max-width:500px) {
+    .Weather h1 {
+        font-size: 30px;
+    }
+
+    .Weather h2 {
+        font-size: 16px;
+    }
+
+    .Weather p {
+        font-size: 14px;
+    }
+
+    .Weather .temperature {
+        font-size: 28px;
+    }
+    .Weather .degrees {
+        font-size: 12px;
+        top: -11px;
+    }
 }

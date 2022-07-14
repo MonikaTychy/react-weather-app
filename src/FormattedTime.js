@@ -28,6 +28,6 @@ export default function FormattedTime (props) {
   let year = now.getFullYear();
 
     return (
-        <p>Last update: {day} {month} {year}, {hours}:{minutes}</p>
+        <p className='FormattedTime'>Last update: {day} {month} {year}, {hours}:{minutes}</p>
     );
 }

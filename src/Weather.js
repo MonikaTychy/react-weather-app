@@ -8,20 +8,20 @@ import CityPhoto from './CityPhoto';
 export default function Weather (props) {
     return (
       <div className='Weather'>
-           <div className='d-inline-flex'>
+           <div className='d-inline-flex city-row'>
            <h1>{props.infos.cityName}
            <span className='temperature'>{Math.round(props.infos.temperature)}</span>
            <span className="degrees">°C</span>
            </h1>
-           <WeatherIcon iconCode={props.infos.icon} size={38} color="#7d0d85" />
+           <WeatherIcon iconCode={props.infos.icon} size={34} color="#7d0d85" />
            </div>
       <div className='row'>
-          <div className='col-6'>
-              <h3>{props.infos.description}</h3>
+          <div className='col-6 weather-details'>
+              <h2>{props.infos.description}</h2>
               <p>Pressure: {props.infos.pressure}hPa</p>
               <p>Wind: {Math.round(props.infos.wind)}m/s</p>
           </div>
-          <div className='col-6'>
+          <div className='col-6 weather-details'>
         <CityPhoto city={props.infos.cityName} />
           </div>
       </div>
@@ -31,5 +31,5 @@ export default function Weather (props) {
         latitude={props.infos.latitude} />
  </div>
 
-    )
+    );
 }

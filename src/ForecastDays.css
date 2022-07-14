@@ -8,13 +8,15 @@
 }
 
 .ForecastDays .dayName {
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 5px;
     color: #7d0d85;
     opacity: 0.6;
 }
 
 .ForecastDays .degrees {
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 25px;
     color: #7d0d85;
 }
 
@@ -25,4 +27,15 @@
 
 .ForecastDays .degrees .max {
     padding: 0 5px;
+}
+
+@media(max-width:500px) {
+    .ForecastDays .dayName {
+        font-size: 16px;
+    }
+    
+    .ForecastDays .degrees {
+        font-size: 14px;
+    }
+
 }

@@ -1,9 +1,17 @@
 footer {
-    margin-left: 20px;
+    text-align: center;
+    margin: 15px auto;
     font-size: 12px;
     font-family: monospace;
+    color: #132743;
 }
 
 .Footer a {
     text-decoration: none;
+    color: #7d0d85;
+}
+
+.Footer a:hover {
+    text-decoration: underline;
+    color: #8A4CA2;
 }

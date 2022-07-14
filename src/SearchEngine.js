@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './SearchEngine.css';
 import Weather from './Weather';
 import axios from 'axios';
 
